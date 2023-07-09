@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Hecho por Franco Frattaroli para prueba tecnica Naiades -->
+
+  <title>Newsletter para ejercicio</title>
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background-color: #efefef;
+      display: inline-grid;
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+    table{
+      border-spacing: 0px;
+    }
+    span{
+      color: #232323;
+    }
+    
+    .container {
+      max-width: 700px;
+      height: auto;
+      display: inline-grid;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #00c52b;
+    }
+    .banner, .calendario-container, .speaker, .footer{
+      display: inline-block;
+    }
+    .banner{
+      width: 700px;
+      height: 465px;
+      background-color: #a51e88;
+      z-index: 0;
+      border-collapse: initial;
+      text-indent: unset;
+      border-spacing: unset;
+    }
+    .banner-texto{
+    width: 700px;
+    height: 465px;
+    position: absolute;
+    display: block;
+    z-index: 5;
+    font-size: 46.4pt;
+    padding-left: 52px;
+    padding-top: 186px;
+    color: #ffffff;
+    }
+    .banner-texto td:nth-child(1){
+      text-align: initial;
+    }
+    button{
+      width: 90px;
+      height: 27px;
+      background-color: #23135f;
+      border: none;
+      color: #ffffff;
+    }
+    a:link{
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    a:visited{
+      color: inherit;
+    }
+    
+    .tfoot td{
+      position: absolute;
+    z-index: 1;
+    
+    color: white;
+    font-size: 18px;
+    }
+    .foto-banner{
+      width: 700px;
+      min-height: 100px;
+      max-width: 700px;
+      position: absolute;
+      height: auto;
+      display: block;
+      margin: 0px;
+      margin-left: -1px;
+      margin-top: -3px;
+    }
+    .logo-banner{
+      position: absolute;
+    z-index: 2;
+    padding-top: 48px;
+    padding-left: 52px;
+    display: block;
+}
+  .logo-footer{
+    padding-top: 21px;
+    padding-left: 152px;
+  }
+    .calendario-container{
+      width: 700px;
+      height: 314px;
+      background-color: aqua;
+    }
+    .texto-calendario{
+      height: 314px;
+    width: 421px;
+    background-color: #ff9200;
+    text-align: initial;
+    }
+    .texto-calendario td:nth-child(1){
+      padding-left: 52px;
+      padding-right: 52px;
+      background-color: #ffffff;
+    }
+    .texto-calendario td:nth-child(2){
+      
+      background-color: #f4f4f4;
+    }
+    .logo-calendario{
+    padding-top: 74px;
+    }
+    .boton-calendario{
+    height: 314px;
+    width: 279px;
+    background-color: #0cb13d7a;
+    display: block;
+    text-align: center;
+    }
+    .boton-calendario p{
+      
+      color: #23135f;
+      padding-bottom: 10px;
+    }
+    .boton-calendario button{
+      width: 186px;
+      height:35px;
+    }
+  
+.derechos p{
+  margin-top: 16px;
+  padding-left: 126px;
+}
+    .video-container {
+      width: 700px;
+      height: 283px;
+      color: #ffffff;
+      background-color: #23135f;
+      z-index: 5;
+      background-image: url('recursos propios/fondoreproductor.png');
+    }
+    .video-container-capa{
+      z-index: 4;
+      width: 700px;
+      height: 283px;
+      position: absolute;
+    }
+    .video-container p{
+      text-align: initial;
+      padding-right: 40px;
+    }
+
+    .video-container td:nth-child(1){
+      padding: 42px;
+    }
+
+    .speaker{
+      width: 700px;
+      height: 131px;
+      background-color: #ffffff;
+      color: #23135f;
+      font-size: 26.64pt;
+      display: inline-table;
+    }
+    
+    .footer{
+      width: 700px;
+      height: 125px;
+      background-color: #7c55b5;
+      color: #ffffff;
+      display: inline-block;
+    }
+    .footer a{
+      color: #23135f;
+    }
+    .footer tr{
+      display: inline-table;
+      width: 350px;
+      height: 125px;
+    }
+    .footer td{
+      width: 200px;
+      min-height: 125px;
+      text-align: initial;
+      padding-left: 52px;
+    }
+    .sangria{
+      padding-left: 34px;
+      color: #ffffff;
+    }  
+  
+  /* Media queries */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <table class="banner">
+      <thead>
+       <tr>
+        <td>
+          <img class="logo-banner" src="recursos propios/logobanner.png" alt="Logo generic">
+        </td>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td>
+          <img class="foto-banner" src="recursos propios/fotofondo2.jpg" alt="Foto de gente en reunion">
+        </td>
+        
+        
+      </tr>
+      </tbody>
+    </table>
+    <table class="banner-texto">
+      <tr>
+        <td>
+          <button><a href="https://www.naiades.com.ar/">LUNCH</a></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Lorem ipsum<br> dolor sit amet</strong>
+        </td>
+      </tr>
+    </table>
+            <table class="calendario-container">
+              <tbody>
+                <tr class="texto-calendario">
+                  <td>
+                    
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</strong> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <strong>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong>
+              </p>
+              </td>
+                <td class="boton-calendario">
+                  <img class="logo-calendario" src="recursos propios/calendario.png" alt="Icono calendario">
+                  <p><strong> March 3th | 12:00 PM<br> 
+                    <span>TBD</span></strong>
+                    </p>
+                    <button><a href="https://www.naiades.com.ar/">Confirm attendance</a></button>
+                </td>
+              </tbody>
+              </tbody>
+            </table>
+            <table class="video-container">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="https://www.naiades.com.ar/"><img src="recursos propios/videoplayer.jpg" alt="Miniatura de video"></a>
+                  </td>
+                    
+                    <td>
+                      <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</strong> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                    </td>
+                  
+                </tr>
+              </tbody>
+            </table>
+            <table class="speaker">
+              <th>
+              <tr>
+                <td>
+                  <p>Speaker: <strong>Lorem Ipsum</strong> - Dolor sit amet</p>
+                </td>
+              </tr>
+            </th>
+            </table>
+                        <table class="footer">
+                          <tbody>
+                            <tr>
+                            <td>
+                                MORE INFORMATION:
+                                <p>
+                                <strong>Lorem Ipsum</strong> | Vice President <br>
+                                <a href="mailto:correo@example.com?subject=Asunto del correo&body=Cuerpo del correo"><strong>consectetur@loremipsum.com</strong></a>
+                                
+                                </p>
+                            </td>
+                              
+                            </tr>
+                            <tr>
+                              <td class="derechos">
+                                <img class="logo-footer" src="recursos propios/logofooter.png" alt="Logo generic">
+                              <p> <span class="sangria">Generic 2020.</span><br>
+                                All rights reserved.</p>
+                              </td>
+                              </tr>
+                          </tbody>
+                          </table>    
+  </div>
+</body>
+</html>
